@@ -15,7 +15,7 @@
 			margin: auto;
 			width: 500px;
 			background-color: #fff;
-			padding: 20px;
+			padding: 20px 40px;
 			border-radius: 10px;
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 		}
@@ -25,7 +25,7 @@
 			margin-bottom: 10px;
 			display: block;
 		}
-		input[type="text"],
+		input[type="email"],
 		input[type="password"] {
 			padding: 10px;
 			border-radius: 5px;
@@ -78,15 +78,16 @@
 </head>
 <body>
 	<h1>Login Page</h1>
-	<form onsubmit="login(); return false;">
+	<form action="/login" method="POST">
 		<label for="email">Email:</label>
-		<input type="text" id="email" name="email" required>
+		<input type="email" id="email" name="email" required>
 		<label for="password">Password:</label>
 		<input type="password" id="password" name="password" required>
 		<input type="submit" value="Login">
 	</form>
 	<div id="newUser">
 		<p>New user? <a href="{{url_for('signUpPage')}}">Sign up here</a>.</p>
+		<p>Event Organizer? <a href="{{url_for('eloginPage')}}">Sign up here</a>.</p>
 	</div>
 	<div id="forgotPassword">
 		<p>Forgot your password? <a href="{{url_for('resetPassword')}}">Reset it here</a>.</p>

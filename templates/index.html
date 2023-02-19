@@ -1,13 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Picture App</title>
+	<title>My Website</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
-    <h1>Picture App</h1>
-    <a href="{{url_for('loginPage')}}">Login</a>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Event Manager</a></li>
+				<li><a href="{{url_for('loginPage')}}">Sign In</a></li>
+				<li><a href="{{url_for('signUpPage')}}">Sign Up</a></li>
+			</ul>
+		</nav>
+		<div class="logo-wrapper">
+		<img src="../static/2.jpg" alt="Logo" class="logo"> 
+		<h1 id="#snap">SNAP SEEK!</h1>
+	</div>
+	</header>
+	
+	<main>
+		<section>
+
+
+			<p>Face Detection from Group Photos" is a web application designed to automatically detect and highlight faces in group photos. This tool uses advanced image processing algorithms and machine learning techniques to accurately identify individual faces and mark them with bounding boxes.</p>
+              <p>  With this application, users can quickly and easily identify and locate specific people in group photos, saving time and effort that would have otherwise been spent manually scanning through the photo. Additionally, this tool is useful for businesses and event planners who need to keep track of attendees and guests in large group settings.
+                </p>
+
+				<p> 
+					Overall, Face Detection from Group Photos is a powerful and user-friendly tool that streamlines the process of locating and identifying faces in group photos.</p>
+		</section>
+
+		<section>
+			<h3>Demo Video</h3>
+			<video width="320" height="180" controls>
+				<source src="demo.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<h2>About Us</h2>
+			<p>This  Website is Created and Managed by Team Coding Monks having team members:<br> 1.Aum Kansara <br>
+																							  2.Keyur Jain<br>
+																							  3.Nancy Patel
+																							
+			</p>
+		</section>
+	</main>
+	
 </body>
 </html>

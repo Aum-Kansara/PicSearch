@@ -45,25 +45,15 @@
 			background-color: #3e8e41;
 		}
 	</style>
-	<script>
-		function uploadImage() {
-			var eventCode = document.getElementById('event-code').value;
-			var file = document.getElementById('file').files[0];
-			// Upload the file to the server using an AJAX request
-			// For demo purposes, just show a message that the file was uploaded:
-			alert('Your image has been uploaded!');
-		}
-	</script>
 </head>
 <body>
-	<h1>Enter Event Code</h1>
-	{% if code_error == 'incorrect' %}
-		<h3 style="color:red">Incorrect Code</h3>
-	{% endif %}
-	<form action="/verify" method="post">
-		<label for="event-code">Event Code:</label>
-		<input type="text" id="event-code" name="event-code" required>
-		<input type="submit" value="Submit">
+	<form action="/add_drive" method="post">
+		<h1>Event Name : {{name}}</h1>
+		<h1>Event Name : {{event_name}}</h1>
+		<h1>Event Code : {{event_code}}</h1>
+		<label for="Drive Link">Enter Drive Link:</label>
+		<input type="text" id="drive" name="drive" required>
+		<input type="submit" value="Add Drive Link">
 	</form>
 </body>
 </html>

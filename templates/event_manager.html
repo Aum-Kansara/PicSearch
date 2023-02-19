@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Organiser Login Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			color: #333;
+		}
+
+		form {
+			background-color: #fff;
+			padding: 20px;
+			max-width: 400px;
+			margin: 0 auto;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+
+		label {
+			display: block;
+			margin-bottom: 8px;
+			color:black;
+		}
+
+		input[type="email"],
+		input[type="password"] {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			margin-bottom: 20px;
+			color: black;
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: green;
+		}
+	</style>
+</head>
+<body>
+	<h1>Event Organizer Login</h1>
+	<form method="post" action="/elogin">
+		<label for="email">Email :</label>
+		<input type="email" id="email" name="email" required>
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password" required>
+		<input type="submit" value="Login">
+	</form>
+</body>
+</html>
