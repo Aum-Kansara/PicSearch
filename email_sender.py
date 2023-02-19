@@ -13,7 +13,7 @@ def send_email(receiver_email_id, photos_dir):
         '''
     # The mail addresses and password
     files = os.listdir(photos_dir)
-    sender_address = 'nancieee.10@gmail.com'
+    sender_address = 'aumkan23@gmail.com'
     sender_pass = 'fltwcowuyrzkneyn'
     receiver_address = receiver_email_id
     # Setup the MIME

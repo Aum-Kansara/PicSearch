@@ -131,7 +131,7 @@ def saveImageToDirectory(image,name,imageName):
     -------
     None.
     """
-    path="./static/peoples/"+name
+    path="./output/"+name
     if os.path.exists(path):
         pass
     else:
