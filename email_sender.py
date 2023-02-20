@@ -3,8 +3,11 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 import os
+from dotenv import load_dotenv
 
 
+
+load_dotenv()
 def send_email(receiver_email_id, photos_dir):
 
     mail_content = '''Hello From PicSearch,
@@ -15,6 +18,7 @@ def send_email(receiver_email_id, photos_dir):
     files = os.listdir(photos_dir)
     sender_address = 'aumkan23@gmail.com'
     sender_pass = 'fltwcowuyrzkneyn'
+    sender_pass = os.getenv('KEY')
     receiver_address = receiver_email_id
     # Setup the MIME
     message = MIMEMultipart()
